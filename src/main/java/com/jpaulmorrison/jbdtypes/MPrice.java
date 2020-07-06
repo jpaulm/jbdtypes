@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 import java.math.*;
 
@@ -173,8 +173,8 @@ public class MPrice extends Monetary implements IPrice {
 /**
  * Add this Monetary Price to another, giving a Monetary Price.
  * Currencies must match
- * @return com.jpaulmorrison.jbdtypes.MPrice
- * @param x com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
+ * @param x jbdtypes.MPrice
  * @throws BDTypeException
  */
 public MPrice add(MPrice x) throws BDTypeException {
@@ -186,7 +186,7 @@ public MPrice add(MPrice x) throws BDTypeException {
 }
 /**
  * Divide this MPrice amount by a BigDecimal quantity, creating a new MPrice
- * @return com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
  * @param x java.math.BigDecimal
  * @throws BDTypeException
  */
@@ -227,7 +227,7 @@ public MPrice divide(Quantity x) throws BDTypeException {
  * Determine if <code> this </code> MPrice is a multiple of the parameter IPrice -
  *  return true if it is. 
  * @return boolean
- * @param p com.jpaulmorrison.jbdtypes.IPrice
+ * @param p jbdtypes.IPrice
   */
 public boolean isMultipleOf(IPrice p) {
 	
@@ -240,7 +240,7 @@ public boolean isMultipleOf(IPrice p) {
  * Determine if <code> this </code> MPrice is a multiple of the parameter MPrice -
  *  return true if it is. 
  * @return boolean
- * @param p com.jpaulmorrison.jbdtypes.MPrice
+ * @param p jbdtypes.MPrice
  */
 public boolean isMultipleOf(MPrice pc) {
 	
@@ -254,7 +254,7 @@ public boolean isMultipleOf(MPrice pc) {
 /**
  * Compare to see if monetary price is equal to this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.MPrice - second monetary price
+ * @param y jbdtypes.MPrice - second monetary price
  * @throws BDTypeException
  */
 public boolean eq(MPrice y) throws BDTypeException {
@@ -263,7 +263,7 @@ public boolean eq(MPrice y) throws BDTypeException {
 /**
  * Compare to see if monetary price is grater than this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.MPrice - second monetary price
+ * @param y jbdtypes.MPrice - second monetary price
  * @throws BDTypeException
  */
 public boolean gt(MPrice y) throws BDTypeException {
@@ -285,7 +285,7 @@ static BigDecimal MakeDecFromParts(int[] parts) {
 
 /**
  * Multiply this MPrice amount by a BigDecimal quantity, creating a new MPrice
- * @return com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
  * @param x java.math.BigDecimal
  * @throws BDTypeException
  */
@@ -320,9 +320,9 @@ public String serialize() {
 }
 /**
  * Create new MPrice with new currency - can only be done if currency is unknown (== null)
- * @param cur com.jpaulmorrison.jbdtypes.Currency
+ * @param cur jbdtypes.Currency
  * @return MPrice
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public MPrice setPriceCurrency(Currency cur) throws BDTypeException{
 	
@@ -336,7 +336,7 @@ public MPrice setPriceCurrency(Currency cur) throws BDTypeException{
  * Create new MPrice with new currency - can only be done if currency is unknown (== null)
  * @param s java.lang.String
  * @return MPrice
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public MPrice setPriceCurrency(String s) throws BDTypeException {
 	
@@ -350,8 +350,8 @@ public MPrice setPriceCurrency(String s) throws BDTypeException {
 /**
  * Subtract a Monetary Price from this one, giving a Monetary Price.
  * Currencies must match
- * @return com.jpaulmorrison.jbdtypes.MPrice
- * @param x com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
+ * @param x jbdtypes.MPrice
  * @throws BDTypeException
  */
 public MPrice subtract(MPrice x) throws BDTypeException {

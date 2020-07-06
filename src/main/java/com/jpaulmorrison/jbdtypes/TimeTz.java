@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 import java.util.TimeZone;
 
@@ -30,8 +30,8 @@ public TimeTz(String s) {
 }
 /**
  * Build a TimeStamp using specified Date object
- * @return com.jpaulmorrison.jbdtypes.TimeStamp
- * @param d com.jpaulmorrison.jbdtypes.Date
+ * @return jbdtypes.TimeStamp
+ * @param d jbdtypes.Date
  * @throws BDTypeException
  */
 TimeStamp buildTimeStamp(Date d) throws BDTypeException {

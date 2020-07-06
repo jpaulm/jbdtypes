@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 import java.math.*;
 
@@ -95,7 +95,7 @@ public class BDTFormatter {
 /**
  * Format a Monetary value using Cultural Preference variables
  * @return java.lang.String
- * @param  com.jpaulmorrison.jbdtypes.Monetary
+ * @param  jbdtypes.Monetary
  * @param  String td - thousands delimiter (may be null)
  * @param  String dd - decimal delimiter 
  * @param  String cs - currency separator (may be null)
@@ -153,7 +153,7 @@ public static String Format(Monetary m, String td, String dd, String cs, String 
 }
 /**
  * Display an (non-Java.util) TimeStamp using specified masks and timestamp separator
- * @param ts com.jpaulmorrison.jbdtypes.TimeStamp
+ * @param ts jbdtypes.TimeStamp
  * @param dm java.lang.String - date mask
  * @param tm java.lang.String - time mask
  * @param tss java.lang.String - timestamp separator
@@ -270,7 +270,7 @@ public static String Format(TimeStamp ts, String dm, String tm, String tss,
 /**
  * Make a Monetary object from a string with possible embedded delimiters or blanks;
  *  currency abbreviation must also be provided.  
- * @return com.jpaulmorrison.jbdtypes.Monetary
+ * @return jbdtypes.Monetary
  * @param s java.lang.String
  * @param td java.lang.String - thousands delimiter (may be null)
  * @param dd java.lang.String - decimal delimiter
@@ -294,7 +294,7 @@ public static String Format(TimeStamp ts, String dm, String tm, String tss,
  *  numerator immediately precedes the slash, and the denominator follows.
  * If no slash is present, there may be a decimal delimiter.
  * The portion before the numerator is the integer part.
- * @return com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
  * @param s java.lang.String
  * @param td java.lang.String - thousands delimiter (may be null)
  * @param dd java.lang.String - decimal delimiter

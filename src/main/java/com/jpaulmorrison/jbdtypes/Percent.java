@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 import java.math.*;
 
 /**
@@ -56,7 +56,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean eq(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.EQ);
@@ -67,7 +67,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean ge(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.GE);
@@ -86,7 +86,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean gt(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.GT);
@@ -97,7 +97,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean le(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.LE);
@@ -108,7 +108,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean lt(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.LT);
@@ -119,7 +119,7 @@ public class Percent extends BigDecimal implements IBDType {
 	 * 
 	 * @return boolean
 	 * @param y
-	 *            com.jpaulmorrison.jbdtypes.Percent - second Percent
+	 *            jbdtypes.Percent - second Percent
 	 */
 	public boolean ne(Percent y) {
 		return BDTHelper.Comp(this, y, BDTHelper.NE);

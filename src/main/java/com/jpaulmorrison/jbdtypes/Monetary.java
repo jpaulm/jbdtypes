@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 import java.math.*;
@@ -68,8 +68,8 @@ import java.math.*;
 }
    /**
    * add value of Monetary object to this Monetary object, creating another one
-   * @return com.jpaulmorrison.jbdtypes.Monetary 
-   * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+   * @return jbdtypes.Monetary 
+   * @param y jbdtypes.Monetary - second monetary amount
    * @throws BDTypeException
    */
    
@@ -87,8 +87,8 @@ import java.math.*;
 * the target currency type.
  * This will only work if the currency of the Monetary amount matches the source
  *  currency of the Exchange Rate
- * @return com.jpaulmorrison.jbdtypes.Monetary 
- * @param x com.jpaulmorrison.jbdtypes.ExchRate
+ * @return jbdtypes.Monetary 
+ * @param x jbdtypes.ExchRate
  * @throws BDTypeException
  */
 public Monetary convert(ExchRate x) throws BDTypeException {
@@ -103,7 +103,7 @@ public Monetary convert(ExchRate x) throws BDTypeException {
    /**
    * Divide value of <code>this</code> Monetary object by Monetary object, creating BigDecimal
    * @return java.math BigDecimal 
-   * @param y com.jpaulmorrison.jbdtypes.Monetary - second Monetary amount
+   * @param y jbdtypes.Monetary - second Monetary amount
    * @throws BDTypeException
    */
    
@@ -118,9 +118,9 @@ public Monetary convert(ExchRate x) throws BDTypeException {
 
 /**
  * Divide this Monetary amount by a BigDecimal quantity, creating a new Monetary
- * @return com.jpaulmorrison.jbdtypes.Monetary 
+ * @return jbdtypes.Monetary 
  * @param x java.math.BigDecimal
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public Monetary divide(Quantity x) throws BDTypeException {
 	    if (m_currency == null)
@@ -131,9 +131,9 @@ public Monetary divide(Quantity x) throws BDTypeException {
 }
 /**
  * Divide this Monetary amount by a BigDecimal quantity, creating an MPrice
- * @return com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.MPrice
  * @param x java.math.BigDecimal
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public MPrice deriveMPrice(Quantity x) throws BDTypeException {
 	    if (m_currency == null)
@@ -145,7 +145,7 @@ public MPrice deriveMPrice(Quantity x) throws BDTypeException {
 /**
  * Compare to see if monetary amount is equal to this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean eq(Monetary y) throws BDTypeException {
@@ -154,7 +154,7 @@ public boolean eq(Monetary y) throws BDTypeException {
 /**
  * Compare to see if this monetary amount is greater than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean ge(Monetary y) throws BDTypeException {
@@ -173,7 +173,7 @@ String getCurrAbbr() {
 }
 /**
  * Get currency from Monetary value
- * @return com.jpaulmorrison.jbdtypes.Currency
+ * @return jbdtypes.Currency
  */
 public Currency getCurrency() {
 	return m_currency;
@@ -181,7 +181,7 @@ public Currency getCurrency() {
 /**
  * Compare to see if this monetary amount is greater than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean gt(Monetary y) throws BDTypeException {
@@ -201,7 +201,7 @@ public boolean gt(Monetary y) throws BDTypeException {
 /**
  * Compare to see if this monetary amount is less than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean le(Monetary y) throws BDTypeException {
@@ -210,7 +210,7 @@ public boolean le(Monetary y) throws BDTypeException {
 /**
  * Compare to see if this monetary amount is less than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean lt(Monetary y) throws BDTypeException {
@@ -218,8 +218,8 @@ public boolean lt(Monetary y) throws BDTypeException {
 }
 /**
  * Multiply this Monetary amount by a Percent Price, returning a Monetary amount 
- * @return com.jpaulmorrison.jbdtypes.Monetary
- * @param x com.jpaulmorrison.jbdtypes.PCPrice
+ * @return jbdtypes.Monetary
+ * @param x jbdtypes.PCPrice
  */
 
 		
@@ -230,9 +230,9 @@ public Monetary multiply(PCPrice x) {
 
 /**
  * Multiply this Monetary amount by a BigDecimal, giving another Monetary amount
- * @return com.jpaulmorrison.jbdtypes.Monetary 
+ * @return jbdtypes.Monetary 
  * @param x java.math.BigDecimal
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public Monetary multiply(Quantity x) throws BDTypeException {
 	
@@ -244,7 +244,7 @@ public Monetary multiply(Quantity x) throws BDTypeException {
 /**
  * Compare to see if a monetary amount is unequal to this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+ * @param y jbdtypes.Monetary - second monetary amount
  * @throws BDTypeException
  */
 public boolean ne(Monetary y) throws BDTypeException {
@@ -313,9 +313,9 @@ public String serialize() {
 }
 /**
  * Create new Monetary with new currency - can only be done if currency is unknown (== null)
- * @param cur com.jpaulmorrison.jbdtypes.Currency
+ * @param cur jbdtypes.Currency
  * @return Monetary
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public Monetary setCurrency(Currency cur) throws BDTypeException{
 	
@@ -329,7 +329,7 @@ public Monetary setCurrency(Currency cur) throws BDTypeException{
  * Create new Monetary with new currency - can only be done if currency is unknown (== null)
  * @param s java.lang.String
  * @return Monetary
- * @throws com.jpaulmorrison.jbdtypes.BDTypeException
+ * @throws jbdtypes.BDTypeException
  */
 public Monetary setCurrency(String s) throws BDTypeException {
 	
@@ -342,8 +342,8 @@ public Monetary setCurrency(String s) throws BDTypeException {
 	}
 	/**
    * subtract value of Monetary object from this Monetary object, creating another one
-   * @return com.jpaulmorrison.jbdtypes.Monetary 
-   * @param y com.jpaulmorrison.jbdtypes.Monetary - second monetary amount
+   * @return jbdtypes.Monetary 
+   * @param y jbdtypes.Monetary - second monetary amount
    * @throws BDTypeException
    */
    

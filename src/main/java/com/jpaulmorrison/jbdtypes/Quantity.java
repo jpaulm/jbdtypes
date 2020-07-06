@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 import java.math.*;
@@ -33,7 +33,7 @@ public Quantity(int i) {
 /**
  * Compare to see if quantity is equal to this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second Quantity
+ * @param y jbdtypes.Quantity - second Quantity
  */
 public boolean eq(Quantity y){
 		return qty.compareTo(y.qty) == 0;
@@ -41,7 +41,7 @@ public boolean eq(Quantity y){
 /**
  * Compare to see if this quantity is greater than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @param y jbdtypes.Quantity - second quantity
   */
 public boolean ge(Quantity y) {
 	return !(qty.compareTo(y.qty) == -1);
@@ -51,7 +51,7 @@ public boolean ge(Quantity y) {
 /**
  * Compare to see if this quantity is greater than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @param y jbdtypes.Quantity - second quantity
  */
 public boolean gt(Quantity y) throws BDTypeException {
 	return qty.compareTo(y.qty) == +1;
@@ -67,7 +67,7 @@ public boolean gt(Quantity y) throws BDTypeException {
 /**
  * Compare to see if this quantity is less than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @param y jbdtypes.Quantity - second quantity
  */
 public boolean le(Quantity y){
 	return !(qty.compareTo(y.qty) == +1);
@@ -75,15 +75,15 @@ public boolean le(Quantity y){
 /**
  * Compare to see if this quantity is less than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @param y jbdtypes.Quantity - second quantity
  */
 public boolean lt(Quantity y)  {
 	return qty.compareTo(y.qty) == -1;
 }
 /**
  * Multiply this quantity by a MPrice, returning a Monetary 
- * @return com.jpaulmorrison.jbdtypes.Monetary
- * @param x com.jpaulmorrison.jbdtypes.MPrice
+ * @return jbdtypes.Monetary
+ * @param x jbdtypes.MPrice
  */
 
 public Monetary multiply(MPrice mpr) {
@@ -95,7 +95,7 @@ public Monetary multiply(MPrice mpr) {
 /**
  * Compare to see if a quantity is unequal to this one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @param y jbdtypes.Quantity - second quantity
  */
 public boolean ne(Quantity y) throws BDTypeException {
 	return qty.compareTo(y.qty) != 0;
@@ -113,8 +113,8 @@ public String serialize() {
 	}
 /**
  * add value of Quantity object to this Quantity object, creating another one
- * @return com.jpaulmorrison.jbdtypes.Quantity 
- * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+ * @return jbdtypes.Quantity 
+ * @param y jbdtypes.Quantity - second quantity
  */
  
  public Quantity add(Quantity y){
@@ -125,8 +125,8 @@ public String serialize() {
 
 	/**
    * subtract value of Quantity object from this Quantity object, creating another one
-   * @return com.jpaulmorrison.jbdtypes.Quantity 
-   * @param y com.jpaulmorrison.jbdtypes.Quantity - second quantity
+   * @return jbdtypes.Quantity 
+   * @param y jbdtypes.Quantity - second quantity
    */
    
    public Quantity subtract(Quantity y){

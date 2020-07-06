@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 import java.math.*;
 
 import java.util.*;
@@ -47,8 +47,8 @@ public PCPrice(String s) throws BDTypeException {
 /**
  * Add this PC Price to another, giving a PC Price.
  * Types must match
- * @return com.jpaulmorrison.jbdtypes.PCPrice
- * @param x com.jpaulmorrison.jbdtypes.PCPrice
+ * @return jbdtypes.PCPrice
+ * @param x jbdtypes.PCPrice
  * @throws BDTypeException
  */
 public PCPrice add(PCPrice x) throws BDTypeException {
@@ -95,7 +95,7 @@ public BigDecimal getValue() {
  * Determine if <code> this </code> PCPrice is a multiple of the parameter IPrice -
  *  return true if it is.
  * @return boolean
- * @param p com.jpaulmorrison.jbdtypes.IPrice
+ * @param p jbdtypes.IPrice
  */
 public boolean isMultipleOf(IPrice p) {
 	if (!(p instanceof PCPrice))
@@ -109,7 +109,7 @@ public boolean isMultipleOf(IPrice p) {
  * Determine if <code> this </code> PCPrice is a multiple of the parameter PCPrice -
  *  return true if it is.
  * @return boolean
- * @param pc com.jpaulmorrison.jbdtypes.PCPrice
+ * @param pc jbdtypes.PCPrice
  */
 public boolean isMultipleOf(PCPrice pc) {
 
@@ -127,16 +127,16 @@ public boolean isPositive() {
 }
 /**
  * Multiply a Monetary amount by this Percent Price, returning a Monetary amount
- * @return com.jpaulmorrison.jbdtypes.Monetary
- * @param x com.jpaulmorrison.jbdtypes.Monetary
+ * @return jbdtypes.Monetary
+ * @param x jbdtypes.Monetary
  */
 public Monetary multiply(Monetary x) {
 	return new Monetary(x.m_value.multiply(this, BDTHelper.s_mathContext), x.m_currency);
 }
 /**
  * Multiply a Quantity by this Percent Price, returning a Percent Price
- * @return com.jpaulmorrison.jbdtypes.PCPrice
- * @param x com.jpaulmorrison.jbdtypes.Quantity
+ * @return jbdtypes.PCPrice
+ * @param x jbdtypes.Quantity
  */
 public PCPrice multiply(Quantity x) {
 	return this.multiply(x);
@@ -164,8 +164,8 @@ public String serialize() {
 /**
  * Subtract this PC Price from another, giving a PC Price.
  * Types must match
- * @return com.jpaulmorrison.jbdtypes.PCPrice
- * @param x com.jpaulmorrison.jbdtypes.PCPrice
+ * @return jbdtypes.PCPrice
+ * @param x jbdtypes.PCPrice
  * @throws BDTypeException
  */
 public PCPrice subtract(PCPrice x) throws BDTypeException {

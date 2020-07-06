@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 import java.util.*;
 
@@ -246,7 +246,7 @@ public boolean isOpen(Date date, String fiType)  {
 /**
  * Insert the method's description here.
  * Creation date: (9/22/00 4:09:05 PM)
- * @return com.jpaulmorrison.jbdtypes.IMarket
+ * @return jbdtypes.IMarket
  * @param s1 java.lang.String
  * @param s2 java.lang.String
  * @param s3 java.lang.String
@@ -257,7 +257,7 @@ static IMarket CreateMarket(String s1, String s2, String s3, String s4) {
 }
 /**
 * Return an IMarket object given the name - return null if string empty 
-* @return com.jpaulmorrison.jbdtypes.Market
+* @return jbdtypes.Market
 * @param s java.lang.String
 */
 public static IMarket Get(String s) throws BDTypeException {

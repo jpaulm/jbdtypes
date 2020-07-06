@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 import java.text.SimpleDateFormat;
@@ -66,7 +66,7 @@ public TimeStamp(Timestamp ts) throws BDTypeException {
 }
 /**
  * Create a TimeStamp object using current time
-  * @return com.jpaulmorrison.jbdtypes.TimeStamp
+  * @return jbdtypes.TimeStamp
   */
 static TimeStamp BuildTimeStamp() {
 	
@@ -91,7 +91,7 @@ static TimeStamp BuildTimeStamp() {
  *  zone will be represented as 08:00-04:00, so that UTC is computed by adding
  *  the two values together.
  * Calendar and era will be ignored for now.
- * @return com.jpaulmorrison.jbdtypes.TimeStamp
+ * @return jbdtypes.TimeStamp
  * @param s java.lang.String
  * @throws BDTypeException
  */
@@ -201,7 +201,7 @@ static TimeStamp BuildTimeStamp(String s) throws BDTypeException{
  * Create an jbdtypes TimeStamp using a java.sql.Timestamp.
  * This differs from an jbdtypes TimeStamp in that it goes down to the nanosecond.  We will
  *   therefore lose fractional milliseconds.
- * @return com.jpaulmorrison.jbdtypes.TimeStamp
+ * @return jbdtypes.TimeStamp
  * @param ts java.sql.Timestamp
  * @throws BDTypeException
  */

@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 import java.util.Calendar;
@@ -59,7 +59,7 @@ public Date(java.sql.Date dt)   {
 /**
  * Return true if <code>this</code> date is after specified date
  * @return boolean
- * @param d com.jpaulmorrison.jbdtypes.Date
+ * @param d jbdtypes.Date
  */
 public boolean after(Date d) {
 	return Integer.parseInt(this.m_date) > Integer.parseInt(d.m_date);
@@ -67,7 +67,7 @@ public boolean after(Date d) {
 /**
  * Return true if <code>this</code> date is before specified date
  * @return boolean
- * @param d com.jpaulmorrison.jbdtypes.Date
+ * @param d jbdtypes.Date
  */
 public boolean before(Date d) {
 	return Integer.parseInt(this.m_date) < Integer.parseInt(d.m_date);
@@ -86,8 +86,8 @@ public boolean before(Date d) {
 }
 /**
  * Build a TimeStamp using specified TimeTz object
- * @return com.jpaulmorrison.jbdtypes.TimeStamp
- * @param t com.jpaulmorrison.jbdtypes.TimeTz
+ * @return jbdtypes.TimeStamp
+ * @param t jbdtypes.TimeTz
  * @throws BDTypeException
  */
 public TimeStamp buildTimeStamp(TimeTz t) throws BDTypeException {
@@ -108,7 +108,7 @@ public java.sql.Date convertToSQL() {
 /**
  * Return true if <code>this</code> date is same as specified date
  * @return boolean
- * @param d com.jpaulmorrison.jbdtypes.Date
+ * @param d jbdtypes.Date
  */
 public boolean equals(Date d) {
 	return Integer.parseInt(this.m_date) == Integer.parseInt(d.m_date);

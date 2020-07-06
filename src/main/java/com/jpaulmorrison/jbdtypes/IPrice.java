@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 
@@ -19,7 +19,7 @@ public interface IPrice  extends IBDType {
 /**
  * Determine if <code> this </code> IPrice is a multiple of the parameter IPrice.
  * @return boolean
- * @param p com.jpaulmorrison.jbdtypes.IPrice
+ * @param p jbdtypes.IPrice
  */
 public boolean isMultipleOf(IPrice p) ;
 /**

@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 import java.math.*;
 
 
@@ -102,8 +102,8 @@ import java.math.*;
  * the target currency type
  * This will only work if the currency of the Monetary amount matches the source
  *  currency of the Exchange Rate
- * @return com.jpaulmorrison.jbdtypes.Monetary
- * @param m com.jpaulmorrison.jbdtypes.Monetary
+ * @return jbdtypes.Monetary
+ * @param m jbdtypes.Monetary
  * @throws BDTypeException
  */
 public Monetary convert(Monetary m) throws BDTypeException{
@@ -112,7 +112,7 @@ public Monetary convert(Monetary m) throws BDTypeException{
 /**
  * Compare to see if this exchange rate is equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean eq(ExchRate y) throws BDTypeException{
@@ -121,7 +121,7 @@ public boolean eq(ExchRate y) throws BDTypeException{
 /**
  * Compare to see if this exchange rate is greater than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean ge(ExchRate y) throws BDTypeException{
@@ -129,21 +129,21 @@ public boolean ge(ExchRate y) throws BDTypeException{
 }
 /**
  * Get Source Currency
- * @return com.jpaulmorrison.jbdtypes.Currency
+ * @return jbdtypes.Currency
  */
 public Currency getSourceCurrency() {
 	return m_sourceCurrency;
 }
 /**
  * Get Target Currency
- * @return com.jpaulmorrison.jbdtypes.Currency
+ * @return jbdtypes.Currency
  */
 public Currency getTargetCurrency() {
 	return m_targetCurrency;
 }
 /**
  * Get TimeStamp
- * @return com.jpaulmorrison.jbdtypes.TimeStamp
+ * @return jbdtypes.TimeStamp
  */
 public TimeStamp getTimeStamp() {
 	return m_timeStamp;
@@ -158,7 +158,7 @@ public BigDecimal getValue() {
 /**
  * Compare to see if this exchange rate is greater than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean gt(ExchRate y) throws BDTypeException{
@@ -167,7 +167,7 @@ public boolean gt(ExchRate y) throws BDTypeException{
 /**
  * This method inverts an Exchange Rate - a new Exchange Rate object is created with
  *  the currencies interchanged, and with a new value which is the reciprocal of this one 
- * @return com.jpaulmorrison.jbdtypes.ExchRate
+ * @return jbdtypes.ExchRate
  */
 public ExchRate invert() {
 	BigDecimal temp = BigDecimal.ONE.divide(m_value, BDTHelper.s_mathContext);
@@ -176,7 +176,7 @@ public ExchRate invert() {
 /**
  * Compare to see if this exchange rate is less than or equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean le(ExchRate y) throws BDTypeException{
@@ -185,7 +185,7 @@ public boolean le(ExchRate y) throws BDTypeException{
 /**
  * Compare to see if this exchange rate is less than specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean lt(ExchRate y) throws BDTypeException{
@@ -194,7 +194,7 @@ public boolean lt(ExchRate y) throws BDTypeException{
 /**
  * Compare to see if this exchange rate is not equal to specified one
  * @return boolean
- * @param y com.jpaulmorrison.jbdtypes.ExchRate - second exchange rate
+ * @param y jbdtypes.ExchRate - second exchange rate
  * @throws BDTypeException
  */
 public boolean ne(ExchRate y) throws BDTypeException {
@@ -210,8 +210,8 @@ public boolean ne(ExchRate y) throws BDTypeException {
  * If the targets of the two Exchange Rates are the same, the parameter Exchange Rate is
  * converted using the <code>invert()</code> method first.  Any other combinations are
  * rejected.
- * @return com.jpaulmorrison.jbdtypes.ExchRate
- * @param com.jpaulmorrison.jbdtypes.ExchRate
+ * @return jbdtypes.ExchRate
+ * @param jbdtypes.ExchRate
  * @throws BDTypeException
  */
 public ExchRate propagate(ExchRate x) throws BDTypeException{

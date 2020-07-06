@@ -1,4 +1,4 @@
-package com.jpaulmorrison.jbdtypes;
+package jbdtypes;
 
 
 
@@ -49,7 +49,7 @@ public Currency(String abbr) throws BDTypeException {
 }
 /** Get information about Currency specified by ISO code
 * @param c String - ISO code
-* @return com.jpaulmorrison.jbdtypes.Currency
+* @return jbdtypes.Currency
 * @throws BDTypeException
 */
 
