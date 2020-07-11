@@ -84,6 +84,7 @@ set CMD_LINE_ARGS=%*
 
 set CLASSPATH=%APP_HOME%\lib\jbdtypes-1.1.0.jar
 
+
 @rem Execute jbdtypes
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JBDTYPES_OPTS%  -classpath "%CLASSPATH%" com.jpaulmorrison.fbp.core.engine.DummyMain %CMD_LINE_ARGS%
 
