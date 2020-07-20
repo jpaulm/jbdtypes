@@ -35,7 +35,7 @@ apply plugin: 'java-library'
    
 }
 
-version = '1.1.0'
+version = '1.1.1'
 
 group = 'com.jpaulmorrison'
 
@@ -69,7 +69,7 @@ java {
 
 
 jar {
-    archiveVersion = '1.1.0'
+    archiveVersion = '1.1.1'
     manifest {
        attributes 'Implementation-Title': 'JBDTypes', 'Implementation-Version': archiveVersion,
              
@@ -133,7 +133,7 @@ description = "Create default maven directory structure"
         
             groupId = 'com.jpaulmorrison'
             artifactId = 'jbdtypes'       
-            version = '1.1.0'
+            version = '1.1.1'
            
             from components.java
            

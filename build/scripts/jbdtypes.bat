@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\jbdtypes-1.1.0.jar
+set CLASSPATH=%APP_HOME%\lib\jbdtypes-1.1.1.jar
 
 
 @rem Execute jbdtypes

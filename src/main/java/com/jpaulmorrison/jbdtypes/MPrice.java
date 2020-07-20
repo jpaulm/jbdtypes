@@ -296,6 +296,20 @@ public MPrice multiply(Quantity x) throws BDTypeException{
 		m.m_value = this.m_value.multiply(x.qty, BDTHelper.s_mathContext);
 		return m;      
 }
+
+/**
+ * Extend this MPrice amount by a BigDecimal quantity, creating a new Monetary
+ * @return jbdtypes.Monetary
+ * @param x java.math.BigDecimal
+ * @throws BDTypeException
+ */
+public Monetary extend(Quantity x) throws BDTypeException{
+		if (m_currency == null)
+	      throw new BDTypeException("Unknown currency");
+		Monetary m = new Monetary(BigDecimal.ZERO, this.m_currency);
+		m.m_value = this.m_value.multiply(x.qty, BDTHelper.s_mathContext);
+		return m;      
+}
 /**
  * Generate a 'preference neutral' string from Monetary Price.
  * Value will be preceded by Currency abbreviation.
