@@ -49,7 +49,7 @@ compileJava.options.encoding = 'UTF-8'
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-mainClassName = 'com.jpaulmorrison.fbp.core.engine.DummyMain'   
+mainClassName = 'com.jpaulmorrison.sample.DummyMain'   
 
 nexusStaging {  
     username = ossrhUser

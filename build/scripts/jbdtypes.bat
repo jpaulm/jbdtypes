@@ -86,7 +86,7 @@ set CLASSPATH=%APP_HOME%\lib\jbdtypes-1.1.1.jar
 
 
 @rem Execute jbdtypes
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JBDTYPES_OPTS%  -classpath "%CLASSPATH%" com.jpaulmorrison.fbp.core.engine.DummyMain %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JBDTYPES_OPTS%  -classpath "%CLASSPATH%" com.jpaulmorrison.sample.DummyMain %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
