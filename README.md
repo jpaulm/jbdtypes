@@ -9,4 +9,4 @@ The `jar` file may not be all that useful, as this code should be regarded more 
 
 This artifact has been added to Maven mainly to allow data types in https://github.com/jpaulm/fbp-etl to be resolved.
 
-Note that `Monetary` is different from `MPrice`, as in the real world, but different from conventional programming.  Also, `PCPrice` (PerCent Price) is different from `MPrice` (Monetary Price).
+Note that `Monetary` is different from `MPrice`, as in the real world - they both have currency and amount, but they have slightly different attributes and methods.  Also, `PCPrice` (PerCent Price) is different from `MPrice` (Monetary Price).
