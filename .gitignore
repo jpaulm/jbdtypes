@@ -31,3 +31,4 @@ bin
 Thumbs.db
 .DS_Store
 
+/build/
