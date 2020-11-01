@@ -1,6 +1,6 @@
-package sample;
+package com.jpaulmorrison.sample;
 
-import jbdtypes.*;
+import com.jpaulmorrison.jbdtypes.*;
 
 public class DummyMain {
 

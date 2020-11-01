@@ -1,4 +1,4 @@
-package jbdtypes;
+package com.jpaulmorrison.jbdtypes;
 
 /**
  * Immutable class describing Account ID

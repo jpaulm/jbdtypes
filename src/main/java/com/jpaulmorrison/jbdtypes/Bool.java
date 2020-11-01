@@ -1,4 +1,4 @@
-package jbdtypes;
+package com.jpaulmorrison.jbdtypes;
 
 /**
  * Basic Data Type wrapping a boolean value
