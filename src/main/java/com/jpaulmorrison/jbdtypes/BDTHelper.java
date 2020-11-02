@@ -126,8 +126,8 @@ import java.util.*;
 	private BDTHelper() {}
 /**
  * Add a currency to s_currencyTable (at initialization time)
- * @param s java.lang.String
- * @param precision int
+ * @param s 
+ * @param precision 
  */
 public static void AddCurrency(String s, int precision) {
 	 Currency cur = new Currency(s, precision); 
@@ -135,10 +135,10 @@ public static void AddCurrency(String s, int precision) {
 	}
 /**
  * Add a Market to s_marketTable (at initialization time)
- * @param s1 java.lang.String  - code
- * @param s2 java.lang.String  - timezone
- * @param s3 java.lang.String  - country_code
- * @param s4 java.lang.String  - quote_currency
+ * @param s1  code
+ * @param s2  timezone
+ * @param s3 country_code
+ * @param s4 quote_currency
  */
 public static void AddMarket(String s1, String s2, String s3, String s4) {
 	 IMarket mkt = Market.CreateMarket(s1, s2, s3, s4);
@@ -148,9 +148,9 @@ public static void AddMarket(String s1, String s2, String s3, String s4) {
 	}
 /**
  * Add a Market to s_marketTable (at initialization time)
- * @param s1 java.lang.String  - code
- * @param s2 java.lang.String  - timezone
- * @param s3 java.lang.List  - vector of close indicator, open time, close time
+ * @param s1  code
+ * @param s2  timezone
+ * @param s3  vector of close indicator, open time, close time
  */
 public static void AddMarketTimes(String s1, String s2, List<?> list) {
 		
@@ -168,8 +168,8 @@ public static void AddMarketTimes(String s1, String s2, List<?> list) {
 	}
 /**
  * Add a java.util.SimpleTimeZone
- * @param String - identifier of time zone
- * @param double - hours to be added to UTC to get local time (may be fractional)
+ * @param id identifier of time zone
+ * @param off hours to be added to UTC to get local time (may be fractional)
  * @return SimpleTimeZone
  */
 private static SimpleTimeZone AddTimeZone(String id, double off) {
@@ -188,7 +188,7 @@ private static SimpleTimeZone AddTimeZone(String id, double off) {
  * This logic uses the actual number of digits to the right of the
  *  decimal point.  Thus .50 will be expressed as 2/4, rather than 1/2.
  * @return int[]
- * @param bd java.math.BigDecimal
+ * @param bd 
  * @throws BDTypeException
  */
 public static int[] CalcVulgarFrac(BigDecimal bd) throws BDTypeException {
@@ -216,9 +216,9 @@ public static int[] CalcVulgarFrac(BigDecimal bd) throws BDTypeException {
 /**
  * Generalized compare for exchange rates
  * @return boolean
- * @param x ExchRate - first exchange rate
- * @param y ExchRate - second exchange rate
- * @param op int - desired relationship (less than, equal, not equal, etc.)
+ * @param x  first exchange rate
+ * @param y second exchange rate
+ * @param op  desired relationship (less than, equal, not equal, etc.)
  * @throws BDTypeException
  */
 static boolean Comp(ExchRate x, ExchRate y, int op) throws BDTypeException{
@@ -242,9 +242,9 @@ static boolean Comp(ExchRate x, ExchRate y, int op) throws BDTypeException{
 /**
  * Generalized compare for monetary amounts
  * @return boolean
- * @param x Monetary - first monetary amount
- * @param y Monetary - second monetary amount
- * @param op int - desired relationship (less than, equal, not equal, etc.)
+ * @param x  first monetary amount
+ * @param y second monetary amount
+ * @param op  desired relationship (less than, equal, not equal, etc.)
  * @throws BDTypeException
  */
   static boolean Comp(Monetary x, Monetary y, int op) throws BDTypeException{
@@ -264,9 +264,9 @@ static boolean Comp(ExchRate x, ExchRate y, int op) throws BDTypeException{
 /**
  * Generalized compare for Percents
  * @return boolean
- * @param x Percent - first Percent
- * @param y Percent - second Percent
- * @param op int - desired relationship (less than, equal, not equal, etc.)
+ * @param x first Percent
+ * @param y  second Percent
+ * @param op  desired relationship (less than, equal, not equal, etc.)
  * @throws BDTypeException
  */
 static boolean Comp(Percent x, Percent y, int op) throws BDTypeException{
@@ -286,9 +286,9 @@ static boolean Comp(Percent x, Percent y, int op) throws BDTypeException{
 /**
   * Generalized compare for BigDecimal
  * @return boolean
- * @param x java.math.BigDecimal - first BigDecimal
- * @param y java.math.BigDecimal - second BigDecimal
- * @param op int - desired relationship (less than, equal, not equal, etc.)
+ * @param x  first BigDecimal
+ * @param y second BigDecimal
+ * @param op desired relationship (less than, equal, not equal, etc.)
  * @throws BDTypeException
  */
 
@@ -309,7 +309,7 @@ static boolean Comp(Percent x, Percent y, int op) throws BDTypeException{
  *   code/currency, value and 'P', 'V' or ' ' - all concatenated together.
  * If final character is absent, decide based on first 3 chars (code/currency).  
  * @return IPrice
- * @param s java.lang.String
+ * @param s 
  * @throws BDTypeException
  */
 public static IPrice CreatePrice(String s) throws BDTypeException {

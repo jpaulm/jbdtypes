@@ -95,11 +95,11 @@ public class BDTFormatter {
 /**
  * Format a Monetary value using Cultural Preference variables
  * @return java.lang.String
- * @param  jbdtypes.Monetary
- * @param  String td - thousands delimiter (may be null)
- * @param  String dd - decimal delimiter 
- * @param  String cs - currency separator (may be null)
- * @param  String bef - "B" if currency code is before value, "A" if after 
+ * @param  m
+ * @param td  thousands delimiter (may be null)
+ * @param dd decimal delimiter 
+ * @param cs  currency separator (may be null)
+ * @param bef  "B" if currency code is before value, "A" if after 
  */
 public static String Format(Monetary m, String td, String dd, String cs, String bef) {
 

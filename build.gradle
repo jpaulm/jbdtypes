@@ -35,7 +35,7 @@ apply plugin: 'java-library'
    
 }
 
-version = '1.1.1'
+version = '1.1.2'
 
 group = 'com.jpaulmorrison'
 
@@ -132,7 +132,7 @@ description = "Create default maven directory structure"
         
             groupId = 'com.jpaulmorrison'
             artifactId = 'jbdtypes'       
-            version = '1.1.1'
+            version = '1.1.2'
            
             from components.java
            
@@ -163,18 +163,12 @@ description = "Create default maven directory structure"
            }
            
          }
-        
-      
-        
-        
                 scm {
           connection = 'scm:git:git:https://github.com/jpaulm.git'
           developerConnection = 'scm:git:ssh:https://github.com/jpaulm.git'
           url = 'https://github.com/jpaulm.git'
         }
         
-      
-      
             }
         }
     }
