@@ -9,7 +9,7 @@ import java.math.*;
  
  */
 
-   public class Quantity {
+   public class Quantity implements IBDType  {
 	   static final String copyright = 
 		   "Copyright 1999, 2000, 2001, 2002, J. Paul Morrison.  At your option, you may copy, " +
 		   "distribute, or make derivative works under the terms of the Clarified Artistic License, " +
@@ -18,17 +18,25 @@ import java.math.*;
 		   "THERE IS NO WARRANTY; USE THIS PRODUCT AT YOUR OWN RISK.";
 	   final static long serialVersionUID = 362498820763181265L;
 	   
-	   BigDecimal qty;
+BigDecimal qty;
 	   
-  public Quantity(BigDecimal val) {
-	  qty = val;
+public Quantity(BigDecimal val) {
+	qty = new BigDecimal(val.toPlainString());
+	// qty = val;	
 	  }
   
+
+public Quantity(String val) {
+	  qty = new BigDecimal(val + "");
+	  }
     
 public Quantity(int i) {
 	qty = new BigDecimal(i);
 }
 
+public String toString() {
+	return qty + "";
+}
 
 /**
  * Compare to see if quantity is equal to this one
@@ -83,7 +91,7 @@ public boolean lt(Quantity y)  {
 /**
  * Multiply this quantity by a MPrice, returning a Monetary 
  * @return jbdtypes.Monetary
- * @param x jbdtypes.MPrice
+ * @param mpr price
  */
 
 public Monetary multiply(MPrice mpr) {

@@ -240,7 +240,7 @@ public boolean isMultipleOf(IPrice p) {
  * Determine if <code> this </code> MPrice is a multiple of the parameter MPrice -
  *  return true if it is. 
  * @return boolean
- * @param p jbdtypes.MPrice
+ * @param pc price 
  */
 public boolean isMultipleOf(MPrice pc) {
 	

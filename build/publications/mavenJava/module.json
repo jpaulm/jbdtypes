@@ -3,7 +3,7 @@
   "component": {
     "group": "com.jpaulmorrison",
     "module": "jbdtypes",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.5.1",
-      "buildId": "7vmrqwgy7rb6hna5ic3jfcgntq"
+      "buildId": "fz76gsuqezdhfjmju62fq2egma"
     }
   },
   "variants": [
@@ -26,13 +26,13 @@
       },
       "files": [
         {
-          "name": "jbdtypes-1.1.1.jar",
-          "url": "jbdtypes-1.1.1.jar",
-          "size": 43754,
-          "sha512": "004d011eb719470fe4bacdcfcfd35f7d7461eec77c0603e7944de6d0da85d46c03616a176f43eedbbf886d29debb61d71623981add720fdf2bf7f006028b65e8",
-          "sha256": "b747fe02b3d7909278df584a066231993d3701e3530a5249bcca73b7754562d2",
-          "sha1": "8f6c880b1faf30e1ef2a435f406c0c7fd51517ba",
-          "md5": "baf41f70e8bdaea48d2f6bb325e0faa1"
+          "name": "jbdtypes-1.1.2.jar",
+          "url": "jbdtypes-1.1.2.jar",
+          "size": 45227,
+          "sha512": "70f98099956e83b97be87eb5bd86b2b71138f8e9f8f450a9ff03b68f40ab3db59ef0d9da66fd43571b8c43d4d99a7b4b42bd9a0294631c8084c36d4a08dde392",
+          "sha256": "35d0ae5166ba018d06e20f44726135c7e929762187d4c25020279102771d0e53",
+          "sha1": "ae3b03117f70760ed8cd872a13e041cc7562075f",
+          "md5": "ec5ba098d881ef04ebca93ded0ccd5b6"
         }
       ]
     },
@@ -47,13 +47,13 @@
       },
       "files": [
         {
-          "name": "jbdtypes-1.1.1.jar",
-          "url": "jbdtypes-1.1.1.jar",
-          "size": 43754,
-          "sha512": "004d011eb719470fe4bacdcfcfd35f7d7461eec77c0603e7944de6d0da85d46c03616a176f43eedbbf886d29debb61d71623981add720fdf2bf7f006028b65e8",
-          "sha256": "b747fe02b3d7909278df584a066231993d3701e3530a5249bcca73b7754562d2",
-          "sha1": "8f6c880b1faf30e1ef2a435f406c0c7fd51517ba",
-          "md5": "baf41f70e8bdaea48d2f6bb325e0faa1"
+          "name": "jbdtypes-1.1.2.jar",
+          "url": "jbdtypes-1.1.2.jar",
+          "size": 45227,
+          "sha512": "70f98099956e83b97be87eb5bd86b2b71138f8e9f8f450a9ff03b68f40ab3db59ef0d9da66fd43571b8c43d4d99a7b4b42bd9a0294631c8084c36d4a08dde392",
+          "sha256": "35d0ae5166ba018d06e20f44726135c7e929762187d4c25020279102771d0e53",
+          "sha1": "ae3b03117f70760ed8cd872a13e041cc7562075f",
+          "md5": "ec5ba098d881ef04ebca93ded0ccd5b6"
         }
       ]
     },
@@ -67,13 +67,13 @@
       },
       "files": [
         {
-          "name": "jbdtypes-1.1.1-sources.jar",
-          "url": "jbdtypes-1.1.1-sources.jar",
-          "size": 66793,
-          "sha512": "855449dcf0337d277d4833f5c6d17081abb909cc74e4898c831c5ea001a282a1b7d180ba7ddf70b3ad28522e96ccb19cd5b4c4df3831d239e88bb21341912abb",
-          "sha256": "3980feec10ef8e5616a06b6aa38e3dee9ef5ab80cdb782a223a2eed2527a2ee6",
-          "sha1": "ffdaec55454c6ebd097398350b6c48993d81d41d",
-          "md5": "710fab37bc3ac4def8f08356054943e2"
+          "name": "jbdtypes-1.1.2-sources.jar",
+          "url": "jbdtypes-1.1.2-sources.jar",
+          "size": 36645,
+          "sha512": "a4b84ebf1f4def216308b17cf69bd7640aeb1250d2b19556a29cde87368723695edc388f87145af496aa320af5cb69048871de4591430ab2c8adca6426776fb3",
+          "sha256": "c8bceb46bea86c3607cc6f740ee0382830d05c38b43a0967d957e949c6baaa01",
+          "sha1": "03bef9e399859151e26cd4a39d5548f8a705ce76",
+          "md5": "ef5f38694d16975c55d6e5b022309ca9"
         }
       ]
     },
@@ -87,13 +87,13 @@
       },
       "files": [
         {
-          "name": "jbdtypes-1.1.1-javadoc.jar",
-          "url": "jbdtypes-1.1.1-javadoc.jar",
-          "size": 100209,
-          "sha512": "f1e839b51891ccc07bdc7e1c4dc41ea45a78dd89ab48a1ef5707d3098708d5137f04cb812cb9b0343ff1a80a4b7c32ff79320dd18ed9a3aa48e49e1dc15d6858",
-          "sha256": "c23cbf319c86db901983eee613887518ad74fc8de3f71d0b5b65e74b0b9a830c",
-          "sha1": "55ac825126d52cfada90eee3e6326f6e1a60363b",
-          "md5": "72b8ae409185726e206d858e11189234"
+          "name": "jbdtypes-1.1.2-javadoc.jar",
+          "url": "jbdtypes-1.1.2-javadoc.jar",
+          "size": 103747,
+          "sha512": "d59dda87cc29cf1bc049ea3cd18e21ff2da214388267c9f2ad2b112988d55f58dfd2b9e2a06571d519f89b531796caecdce45f11852f1a0564d3ac6a8212f911",
+          "sha256": "3c3a0f8a924e1d4182819f9d9bd31309a154b7e696e5391c2bdc15c8559fac30",
+          "sha1": "ac6472b94e23d35560822b78f1ac909701ec90f0",
+          "md5": "d9fc17e786a7a3700dcf936a95d65eee"
         }
       ]
     }

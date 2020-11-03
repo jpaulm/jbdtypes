@@ -150,7 +150,6 @@ public static void AddMarket(String s1, String s2, String s3, String s4) {
  * Add a Market to s_marketTable (at initialization time)
  * @param s1  code
  * @param s2  timezone
- * @param s3  vector of close indicator, open time, close time
  */
 public static void AddMarketTimes(String s1, String s2, List<?> list) {
 		
@@ -174,7 +173,7 @@ public static void AddMarketTimes(String s1, String s2, List<?> list) {
  */
 private static SimpleTimeZone AddTimeZone(String id, double off) {
 
-	    int offset = (new Double(off * 3600000)).intValue();
+	    int offset = (int) Math.round(off * 3600000);
 
 		SimpleTimeZone tz =  new SimpleTimeZone(offset, id);
 

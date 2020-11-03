@@ -211,7 +211,7 @@ public boolean ne(ExchRate y) throws BDTypeException {
  * converted using the <code>invert()</code> method first.  Any other combinations are
  * rejected.
  * @return jbdtypes.ExchRate
- * @param jbdtypes.ExchRate
+ * @param x exchange rate
  * @throws BDTypeException
  */
 public ExchRate propagate(ExchRate x) throws BDTypeException{

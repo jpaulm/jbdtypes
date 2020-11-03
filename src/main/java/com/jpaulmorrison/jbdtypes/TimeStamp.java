@@ -218,7 +218,7 @@ public Timestamp convertToSQL() {
 
 	long millis = getTime() % 1000;
 	java.sql.Timestamp ts = new Timestamp(this.getTime() - millis);
-	ts.setNanos((new Long(millis * 1000000)).intValue());
+	ts.setNanos((int) Math.round(millis * 1000000));
 	return ts;
 	
 }

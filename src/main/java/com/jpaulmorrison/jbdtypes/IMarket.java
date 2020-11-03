@@ -5,20 +5,24 @@ import java.util.*;
 /**
  * Insert the type's description here.
  * Creation date: (9/20/00 2:35:47 PM)
+ *  */
  
- */
+
 public interface IMarket extends IBDType{   
-/**
- * Insert the method's description here.
- * Creation date: (9/26/00 4:55:31 PM)
- * @return com.sun.java.util.collections.HashMap
- */
-	static final String copyright = 
-		"Copyright 1999, 2000, 2001, 2002, J. Paul Morrison.  At your option, you may copy, " +
-		"distribute, or make derivative works under the terms of the Clarified Artistic License, " +
-		"based on the Everything Development Company's Artistic License.  A document describing " +
-		"this License may be found at http://www.jpaulmorrison.com/fbp/artistic2.htm. " +
-		"THERE IS NO WARRANTY; USE THIS PRODUCT AT YOUR OWN RISK.";	
+
+	
+ static final String copyright = 
+				"Copyright 1999, 2000, 2001, 2002, J. Paul Morrison.  At your option, you may copy, " +
+				"distribute, or make derivative works under the terms of the Clarified Artistic License, " +
+				"based on the Everything Development Company's Artistic License.  A document describing " +
+				"this License may be found at http://www.jpaulmorrison.com/fbp/artistic2.htm. " +
+				"THERE IS NO WARRANTY; USE THIS PRODUCT AT YOUR OWN RISK.";		
+ 
+ /**
+  * Insert the method's description here.
+  * Creation date: (9/26/00 4:55:31 PM)
+  * @return com.sun.java.util.collections.HashMap
+  */
 HashMap<?, ?> getHolidays();
 /**
  * Insert the method's description here.
