@@ -1,4 +1,4 @@
-#### Business Data Types
+### Business Data Types
 
 For a description of the rationale behind these 
 classes, see https://jpaulm.github.io/busdtyps.html ,
