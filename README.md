@@ -5,7 +5,7 @@ classes, see https://jpaulm.github.io/busdtyps.html ,
 and for an even more high-level introduction, which also talks about the problems with scientific data: 
 https://jpaulm.github.io/datatyps.html . 
 
-This collection of data types was developed for a particular application, for which the code is unfortunately no longer available.  Among other things, it supported some 200 currencies, obtaining conversion rates in real time from a currency conversion web site.
+This collection of data types was developed for a Brokerage application, for which the code is unfortunately no longer available.  Among other things, the application supported some 200 currencies, obtaining conversion rates in real time from a currency conversion web site.
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.jpaulmorrison/jbdtypes.svg?label=JBDTypes)](https://search.maven.org/search?q=g:%22com.jpaulmorrison%22%20AND%20a:%22jbdtypes%22)
 
